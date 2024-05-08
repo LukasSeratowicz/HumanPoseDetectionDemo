@@ -36,6 +36,9 @@ def open_file():
 
 # AI Image processing - here is where the magic happens
 def processing(file_path):
+    if file_path == None:
+        file_path="soldiers.png"
+        print(f"No image selected, using default: {file_path}")
     print(f"Processing image: {file_path}")
     model = YOLO("yolov8n-pose.pt")
     results = model(source=file_path, show=True, conf=0.3, save=False) # Show the Results, but do not save
