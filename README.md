@@ -5,7 +5,7 @@
 - Python <br><br>
 Tested on : <br>
 Windows 11 with Python 3.11 and CUDA installed (torch v2.3), using an RTX 3060 Mobile - WORKING<br>
-MacOS with Python 3.11.8 (with latest torch available as v2.2.2) - NOT WORKING (file selection not working, can still click process without selecting any file for default image)<br>
+MacOS with Python 3.11.8 (with latest torch available as v2.2.2) - WORKING ( reinstallation of torch was needed - torch.cuda/torch.utils were not recongized)<br>
 
 ## Requirements:
 - Copy the repository or download and unzip the file
