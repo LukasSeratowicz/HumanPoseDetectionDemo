@@ -2,8 +2,10 @@
 
 ## Pre-Requirements:
 - Computer (preferably with CUDA GPU)
-- Python
-Tested on Windows 11 with Python 3.11 and CUDA installed, using an RTX 3060 Mobile
+- Python <br><br>
+Tested on : <br>
+Windows 11 with Python 3.11 and CUDA installed (torch v2.3), using an RTX 3060 Mobile - WORKING<br>
+MacOS with Python 3.11.8 (with latest torch available as v2.2.2) - NOT WORKING (file selection not working, can still click process without selecting any file for default image)<br>
 
 ## Requirements:
 - Copy the repository or download and unzip the file
@@ -12,8 +14,8 @@ Tested on Windows 11 with Python 3.11 and CUDA installed, using an RTX 3060 Mobi
   b) Ultralitycs
   c) NumPy
   d) PyTorch
-
-Running on GPU is not necessary, but highly advised due to speed advantage. If you want to run on GPU, follow instructions below:
+<br>
+Running on GPU is not necessary, but highly advised due to speed advantage. If you want to run on GPU, follow instructions below:<br><br>
 
 Please run `GPUcheck.py` to see if your GPU is available and is using CUDA.   
 If the program reports the usage of CPU instead, you can install CUDA with the following link:  
@@ -24,7 +26,7 @@ If you have CUDA installed but the program still reports CPU as the main device:
 - Install PyTorch with CUDA selected from the following link: [PyTorch Installation](https://pytorch.org/get-started/locally/)
 <img src="https://github.com/LukasSeratowicz/HumanPoseDetectionDemo/assets/127187274/aed58a08-90af-4ebb-9bcf-dcb5739fe41f" alt="GPUcheck.py in action" width="350"/>
 
-
+<br><br>
 **Webcam not detected?**
 - The most common issue is that you might be running it in a virtual machine that does not have direct access to your webcam.
 
