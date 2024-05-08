@@ -19,7 +19,7 @@ def open_file():
     global image_preview_label
     program_directory = os.path.dirname(os.path.realpath(__file__))
     initial_dir = os.path.abspath(program_directory)
-    file_path = filedialog.askopenfilename(initialdir=initial_dir,filetypes=[("Image files", "*.png;*.jpg;*.jpeg")])
+    file_path = filedialog.askopenfilename(initialdir=initial_dir,filetypes=[("Image files", "*.png *.jpg *.jpeg")])
     if file_path:
         image = Image.open(file_path)
         screen_width = root.winfo_screenwidth() - 50  # Subtract 50 pixels for padding
